@@ -1,0 +1,32 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "title": "alimentaire",
+      "prix": "80",
+      "description": "produit alimentaire 1",
+      "disponibilite": true
+    },
+    {
+      "id": 2,
+      "title": "alimentaire",
+      "prix": "100",
+      "description": "produit alimentaire",
+      "disponibilite": true
+    },
+    {
+      "id": "3",
+      "title": "prod3",
+      "description": "desc3",
+      "prix": "20",
+      "disponibilite": true
+    },
+    {
+      "id": "4",
+      "title": "prod 4 ",
+      "description": "desc 4 ",
+      "prix": "200",
+      "disponibilite": true
+    }
+  ]
+}

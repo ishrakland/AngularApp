@@ -1,0 +1,47 @@
+<img src='{{img}}'/>
+<img [src]='img'/>
+<div class="container">
+    <div class="form-group">
+        <label>name</label>
+        <input id="name" (input)='save()' class="form-control"  [(ngModel)]='name'>
+    </div>
+    <div class="form-group">
+        <label>email</label>
+        <input class="form-control"  [(ngModel)]='email'>
+    </div>
+    <div class="form-group">
+        <label>Phone</label>
+        <input class="form-control"  [(ngModel)]='phone'>
+    </div>
+    <div class="form-group">
+        <label>About</label>
+        <textarea class="form-control"  [(ngModel)]='about'></textarea>
+    </div>
+    <button *ngIf="name.length==12" class="btn btn-danger" (click)="save()">submit</button>
+</div>
+
+<hr>
+<div class="form-group">
+    <label>ID</label>
+    <input class="form-control" type='number'  [(ngModel)]='id'>
+</div>
+<div class="form-group">
+    <label>Name</label>
+    <input class="form-control"  [(ngModel)]='heroName'>
+</div>
+<button class="btn btn-success" (click)="addHeros()">submit</button>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr *ngFor='let hero of HEROES' [ngClass]="{'h_black':hero.id=='2','h_red':hero.id=='1','h_yellow':hero.id=='4'}">
+                <td>{{hero.id}}</td>
+                <td>{{hero.name}}</td>
+            </tr>
+    </tbody>
+</table>
