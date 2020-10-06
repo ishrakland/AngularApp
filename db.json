@@ -1,0 +1,74 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "title": "test",
+      "prix": "80",
+      "description": "produit alimentaire 1",
+      "disponibilite": true
+    },
+    {
+      "id": 2,
+      "title": "alimen",
+      "prix": "100",
+      "description": "produit alimentaire",
+      "disponibilite": false
+    },
+    {
+      "id": 3,
+      "title": "alimentaire",
+      "prix": "80",
+      "description": "produit alimentaire 1",
+      "disponibilite": false
+    },
+    {
+      "id": 4,
+      "title": "agro",
+      "prix": "80",
+      "description": "produit alimentaire 1",
+      "disponibilite": true
+    },
+    {
+      "id": 5,
+      "title": "agro",
+      "prix": "80",
+      "description": "produit alimentaire 1",
+      "disponibilite": true
+    },
+    {
+      "id": 6,
+      "title": "alimentaire",
+      "prix": "80",
+      "description": "produit alimentaire 1",
+      "disponibilite": true
+    },
+    {
+      "id": 7,
+      "title": "alimentaire",
+      "prix": "80",
+      "description": "produit alimentaire 1",
+      "disponibilite": true
+    },
+    {
+      "id": 8,
+      "title": "alimentaire",
+      "prix": "80",
+      "description": "produit alimentaire 1",
+      "disponibilite": true
+    },
+    {
+      "id": 9,
+      "title": "alimentaire",
+      "prix": "80",
+      "description": "produit alimentaire 1",
+      "disponibilite": true
+    },
+    {
+      "id": 10,
+      "title": "alimentaire",
+      "prix": "80",
+      "description": "produit alimentaire 1",
+      "disponibilite": true
+    }
+  ]
+}
