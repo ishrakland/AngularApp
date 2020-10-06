@@ -22,8 +22,9 @@ url = environment.apiURL;
   updateProductById(id,product){
     return this.http.put(this.url+'/product/'+id, product)
   }
+
   deleteProductById(id){
-    return this.http.delete(this.url+'/product'+id)
+    return this.http.delete(this.url+'/product/'+id)
   }
 
 }

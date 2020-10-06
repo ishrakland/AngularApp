@@ -1,5 +1,16 @@
+<h1>{{'welcome' | translate}}</h1>
 <table class="table">
     <thead>
+        <tr>
+            <th>{{'search'|translate}}:</th>
+            <th> <input type="text" class="form-control" [(ngModel)]="term"> </th>
+            <th><select class="form-control"  [(ngModel)]="dsp">               
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                   
+            </select>
+            </th>
+        </tr>
         <tr>
             <th>ID</th>
             <th>Title</th>
@@ -9,7 +20,7 @@
         </tr>
     </thead>
     <tbody>
-            <tr *ngFor='let prod of products'>
+            <tr *ngFor='let prod of products| search:term:dsp '>
                 <td>{{prod.id}}</td>
                 <td>{{prod.title}}</td>
                 <td>{{prod.description}}</td>
@@ -19,7 +30,7 @@
 
             <td>
                 <button class="btn btn-info" (click)='edit(prod)'>Edit</button>
-                <button class="btn btn-danger" (click)='delete()'>Delete</button>
+                <button class="btn btn-danger" (click)='delete(prod.id)'>Delete</button>
             </td>
         </tr>
     </tbody>

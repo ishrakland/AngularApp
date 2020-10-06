@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(public translate: TranslateService) {
+    translate.addLangs(["en", "fr"]);
+    translate.setDefaultLang('en'); 
+    let browserLang = translate.getBrowserLang();
+    translate.use(browserLang.match(/en|fr/) ? browserLang : 'en');
+ }
   ngOnInit(): void {
   }
 
